@@ -4,7 +4,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Name of Project</title>
+  <title>Time tracking dashdoard</title>
+
+  <!-- FAVICON  -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 
   <!-- STYLES  -->
   <link rel="stylesheet" href="css/normalize.css">
@@ -13,7 +22,102 @@
 </head>
 <body>
 
+  <!-- LOADER  -->
+  <div class="loader-wrapper js-loader">
+    <span class="loader"></span>
+  </div>
 
+
+  <section class="wrapper">
+    <!-- DATA-CHANGER -->
+    <div class="changer">
+      <div class="changer__inner">
+        <img class="changer__img" src="img/robson.jpg" alt="Jeremy Robson" width="78" height="78" srcset="img/robson.jpg 1x, img/robson@2x.jpg 2x">
+        <h1 class="changer__title">Jeremy<br>Robson</h1>
+      </div>
+
+      <div class="changer__buttons">
+        <button class="changer__button" type="button" data-daily="daily">Daily</button>
+        <button class="changer__button" type="button" data-weekly="weekly">Weekly</button>
+        <button class="changer__button" type="button" data-monthly="monthly">Monthly</button>
+      </div>
+    </div>
+
+    <ul class="wrapper__grid grid">
+      <!-- WORK  -->
+      <li class="grid__card card">
+        <div class="card__inner">
+          <div class="card__action">
+            <h3 class="card__title">Work</h3>
+            <button class="card__button" type="button">
+              <img src="img/three-dote.svg" aria-hidden="true" width="21" height="5" alt="">
+            </button>
+          </div>
+          <div class="card__time js-time" data-daily-work="5"><b>5</b>hrs</div>
+        </div>
+      </li>
+      <!-- PLAY -->
+      <li class="grid__card card">
+        <div class="card__inner">
+          <div class="card__action">
+            <h3 class="card__title">Play</h3>
+            <button class="card__button" type="button">
+              <img src="img/three-dote.svg" aria-hidden="true" width="21" height="5" alt="">
+            </button>
+          </div>
+          <div class="card__time js-time" data-daily-work="2"><b>2</b>hrs</div>
+        </div>
+      </li>
+      <!-- STUDY -->
+      <li class="grid__card card">
+        <div class="card__inner">
+          <div class="card__action">
+            <h3 class="card__title">Study</h3>
+            <button class="card__button" type="button">
+              <img src="img/three-dote.svg" aria-hidden="true" width="21" height="5" alt="">
+            </button>
+          </div>
+          <div class="card__time js-time" data-daily-work="1"><b>1</b>hrs</div>
+        </div>
+      </li>
+      <!-- EXERCISE -->
+      <li class="grid__card card">
+        <div class="card__inner">
+          <div class="card__action">
+            <h3 class="card__title">Exercise</h3>
+            <button class="card__button" type="button">
+              <img src="img/three-dote.svg" aria-hidden="true" width="21" height="5" alt="">
+            </button>
+          </div>
+          <div class="card__time js-time" data-daily-work="1"><b>1</b>hrs</div>
+        </div>
+      </li>
+      <!-- SOCIAL -->
+      <li class="grid__card card">
+        <div class="card__inner">
+          <div class="card__action">
+            <h3 class="card__title">Social</h3>
+            <button class="card__button" type="button">
+              <img src="img/three-dote.svg" aria-hidden="true" width="21" height="5" alt="">
+            </button>
+          </div>
+          <div class="card__time js-time" data-daily-work="1"><b>1</b>hrs</div>
+        </div>
+      </li>
+      <!-- SELF-CARE -->
+      <li class="grid__card card">
+        <div class="card__inner">
+          <div class="card__action">
+            <h3 class="card__title">Self care</h3>
+            <button class="card__button" type="button">
+              <img src="img/three-dote.svg" aria-hidden="true" width="21" height="5" alt="">
+            </button>
+          </div>
+          <div class="card__time js-time" data-daily-work="1"><b>1</b>hrs</div>
+        </div>
+      </li>
+    </ul>
+  </section>
   <script src="js/main.js"></script>
 </body>
 </html>
