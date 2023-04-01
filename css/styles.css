@@ -295,6 +295,13 @@ img {
   background-color: #1c204b;
   min-height: 199px;
   margin-top: auto;
+  transition: background-color 0.2s ease;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.card__inner:hover {
+  background-color: #33397a;
 }
 
 .card__action {
@@ -316,7 +323,6 @@ img {
   display: inline-flex;
   background-color: transparent;
   border: none;
-  padding: 0;
   cursor: pointer;
 }
 
